@@ -1,0 +1,450 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../Setting_Dashboard/setting_css/search_index.css">
+    <title>SOSS Settings</title>
+    <link rel="stylesheet" type="text/css" href="../Setting_Dashboard/setting_css/search_index copy.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+      <div class="sidebar">
+        <section class="sidebar__section">
+            <h3>Settings</h3>
+            <a class="sidebar__section__link sidebar__section__link--selected  sidebar-item" data-toggle="list"
+                href="#account-general">
+                <svg viewBox="0 0 24 24">
+                    <g>
+                        <path
+                            d="M21 12a8.958 8.958 0 0 1-1.526 5.016A8.991 8.991 0 0 1 12 21a8.991 8.991 0 0 1-7.474-3.984A9 9 0 1 1 21 12Z" />
+                        <path fill="currentColor"
+                            d="M12.75 9a.75.75 0 0 1-.75.75v2.5A3.25 3.25 0 0 0 15.25 9h-2.5Zm-.75.75a.75.75 0 0 1-.75-.75h-2.5A3.25 3.25 0 0 0 12 12.25v-2.5ZM11.25 9a.75.75 0 0 1 .75-.75v-2.5A3.25 3.25 0 0 0 8.75 9h2.5Zm.75-.75a.75.75 0 0 1 .75.75h2.5A3.25 3.25 0 0 0 12 5.75v2.5Zm-6.834 9.606L3.968 17.5l-.195.653l.444.517l.949-.814Zm13.668 0l.949.814l.444-.517l-.195-.653l-1.198.356ZM9 16.25h6v-2.5H9v2.5Zm0-2.5a5.252 5.252 0 0 0-5.032 3.75l2.396.713A2.752 2.752 0 0 1 9 16.25v-2.5Zm3 6a7.73 7.73 0 0 1-5.885-2.707L4.217 18.67A10.23 10.23 0 0 0 12 22.25v-2.5Zm3-3.5c1.244 0 2.298.827 2.636 1.963l2.396-.713A5.252 5.252 0 0 0 15 13.75v2.5Zm2.885.793A7.73 7.73 0 0 1 12 19.75v2.5a10.23 10.23 0 0 0 7.783-3.58l-1.898-1.627Z">
+                        </path>
+                    </g>
+                </svg>
+                <span>
+                    Profile
+                </span>
+            </a>
+            <a class="sidebar__section__link idebar-item" data-toggle="list" href="#account-change-password">
+                <svg viewBox="0 0 24 24">
+                    <g>
+                        <path
+                            d="M2.5 18.5v-1h19v1h-19Zm.535-5.973l-.762-.442l.965-1.693h-1.93v-.884h1.93l-.965-1.643l.762-.442L4 9.065l.965-1.642l.762.442l-.965 1.643h1.93v.884h-1.93l.965 1.693l-.762.442L4 10.835l-.965 1.692Zm8 0l-.762-.442l.965-1.693h-1.93v-.884h1.93l-.965-1.643l.762-.442L12 9.065l.965-1.642l.762.442l-.965 1.643h1.93v.884h-1.93l.965 1.693l-.762.442L12 10.835l-.965 1.692Zm8 0l-.762-.442l.965-1.693h-1.93v-.884h1.93l-.965-1.643l.762-.442L20 9.065l.965-1.642l.762.442l-.965 1.643h1.93v.884h-1.93l.965 1.693l-.762.442L20 10.835l-.965 1.692Z">
+                        </path>
+                    </g>
+                </svg>
+                <span>
+                    Password
+                </span>
+            </a>
+            <a class="sidebar__section__link sidebar-item" data-toggle="list" href="#account-info">
+                <svg viewBox="0 0 24 24">
+                    <g>
+                        <path
+                            d="M10 4a4 4 0 0 0-4 4a4 4 0 0 0 4 4a4 4 0 0 0 4-4a4 4 0 0 0-4-4m0 2a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m7 6c-.16 0-.24.08-.24.24l-.26 1.26c-.22.18-.54.34-.78.5l-1.28-.5c-.08 0-.24 0-.32.1l-.96 1.76c-.08.08-.08.24.08.32l1.04.82v1l-1.04.82c-.08.08-.16.24-.08.32l.96 1.76c.08.1.24.1.32.1l1.28-.5c.24.16.56.32.78.5l.26 1.26c0 .16.08.24.24.24h2c.08 0 .24-.08.24-.24l.16-1.26c.32-.18.64-.34.88-.5l1.22.5c.14 0 .3 0 .3-.1l1.04-1.76c.08-.08 0-.24-.08-.32l-1.04-.82v-1l1.04-.82c.08-.08.16-.24.08-.32L21.8 13.6c0-.1-.16-.1-.3-.1l-1.22.5c-.24-.16-.56-.32-.88-.5l-.16-1.26c0-.16-.16-.24-.24-.24h-2m-7 1c-2.67 0-8 1.33-8 4v3h9.67c-.28-.59-.48-1.23-.58-1.9H3.9V17c0-.64 3.13-2.1 6.1-2.1c.43 0 .87.04 1.3.1c.2-.64.47-1.24.82-1.79c-.78-.13-1.52-.21-2.12-.21m8.04 2.5c.8 0 1.46.66 1.46 1.54c0 .8-.66 1.46-1.46 1.46c-.88 0-1.54-.66-1.54-1.46c0-.88.66-1.54 1.54-1.54Z">
+                        </path>
+                    </g>
+                </svg>
+                <span>
+                    Verify Account
+                </span>
+            </a>
+            <a class="sidebar__section__link sidebar-item" data-toggle="list" href="#account-social-links">
+                <svg viewBox="0 0 24 24">
+                    <g>
+                        <path fill-rule="nonzero"
+                            d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z">
+                        </path>
+                    </g>
+                </svg>
+                <span>
+                    Notifications
+                </span>
+            </a>
+            <a class="sidebar__section__link sidebar-item" data-toggle="list" href="#account-connections">
+                <svg viewBox="0 0 24 24">
+                    <g>
+                        <path
+                            d="M12 0.47998C5.63998 0.47998 0.47998 5.63998 0.47998 12C0.47998 18.36 5.63998 23.52 12 23.52C18.36 23.52 23.52 18.36 23.52 12C23.52 5.63998 18.36 0.47998 12 0.47998ZM12 18.82C8.22998 18.82 5.17998 15.77 5.17998 12C5.17998 8.22998 8.22998 5.17998 12 5.17998C15.77 5.17998 18.82 8.22998 18.82 12C18.82 15.77 15.77 18.82 12 18.82Z"
+                            fill-rule="nonzero"></path>
+                        <path
+                            d="M13.5 12.423q-.846 0-1.423-.577q-.577-.577-.577-1.423q0-.846.577-1.423q.577-.577 1.423-.577q.846 0 1.423.577q.577.577.577 1.423q0 .846-.577 1.423q-.577.577-1.423.577Zm-7.808 3.192V5.231h15.616v10.384H5.692Zm2.616-1h10.384q0-.67.475-1.143q.474-.472 1.14-.472V7.846q-.67 0-1.143-.474q-.472-.475-.472-1.141H8.308q0 .67-.475 1.143q-.474.472-1.14.472V13q.67 0 1.143.475q.472.474.472 1.14Zm-5.616 4V8.192h1v9.423h14.654v1H2.692Zm4-4V6.231v8.384Z"
+                            fill-rule="nonzero"></path>
+                    </g>
+                </svg>
+                <span>
+                    Payments
+                </span>
+            </a>
+        </section>
+
+
+        </section>
+
+        <main>
+        </main>
+
+
+
+        </section>
+        <section class="sidebar__section">
+        </section>
+    </div>
+
+    <main class="feed">
+        <div class="card overflow-hidden" style=" width: 82%; position: relative; left: 4rem; top: -4rem;">
+            <div class="row no-gutters row-bordered row-border-light">
+                <div class="col-md-10">
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="account-general">
+                            <hr class="border-light m-0">
+                            <div class="user-img" style="position: relative; left: 1rem; top: 0.5rem;">
+                                <img src="https://yt3.googleusercontent.com/-CFTJHU7fEWb7BYEb6Jh9gm1EpetvVGQqtof0Rbh-VQRIznYYKJxCaqv_9HeBcmJmIsp2vOO9JU=s900-c-k-c0x00ffffff-no-rj"
+                                    id="photo">
+                                <input type="file" id="file">
+                                <label for="file" id="uploadbtn"><i class="fas fa-camera"></i></label>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label class="form-label">Username</label>
+                                    <input type="text" class="form-control mb-1" value="">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">E-mail</label>
+                                    <input type="text" class="form-control mb-1" value="">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Phone number</label>
+                                    <input type="number" class="form-control" value="">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Description</label><br>
+                                    <textarea name="" id="" cols="109" rows="10"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <select name="country" id="country" class="form-control"
+                                        placeholder="Select a country...">
+                                        <option value="">Select a country...</option>
+                                        <option value="AF">Pakistan</option>
+                                        <option value="AX">Dubai</option>
+                                        <option value="AL">Indonasia</option>
+                                    </select>
+
+                                </div>
+                                <button type="button" class="btn btn-primary">Update</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="account-change-password">
+                            <div class="card-body pb-2">
+                                <h3>Password</h3>
+                                <br>
+                                <div class="form-group">
+                                    <label class="form-label">Old password</label>
+                                    <input type="password" class="form-control" placeholder="Enter your password here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">New password</label>
+                                    <input type="password" class="form-control" placeholder="Enter your password here">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Confirm password</label>
+                                    <input type="password" class="form-control" placeholder="Enter your password here">
+                                </div>
+                                <button type="button" class="btn btn-primary">Update</button>
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="account-info">
+                            <div class="card-body pb-2">
+                                <h3>Verify Account</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos. </p>
+                                <br>
+                                <div class="form-group">
+                                    <div class="btn_or_input_of_verify_account">
+                                        <h6>Add the html tag</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.<a
+                                                href="#"> Learn more</a> </p>
+                                        <button
+                                            style="width: 130px;position: relative; border: 1px solid; margin-top: -0.7rem; background-color: transparent; color: black;">Copy
+                                            Tag</button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="btn_or_input_of_verify_account">
+                                        <h6>Upload html file</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.<a
+                                                href="#"> Learn more</a> </p>
+                                        <button
+                                            style="width: 130px;position: relative; border: 1px solid; margin-top: -0.7rem; background-color: transparent; color: black;">Download</button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <div class="btn_or_input_of_verify_account">
+                                            <h6>Add txt record</h6>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.<a
+                                                    href="#"> Learn more</a> </p>
+                                            <button
+                                                style="width: 130px;position: relative; border: 1px solid; margin-top: -0.7rem; background-color: transparent; color: black;">Download</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <div class="btn_or_input_of_verify_account">
+                                            <h6>Verify Account</h6>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.<a
+                                                    href="#"> Learn more</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <div class="btn_or_input_of_verify_account">
+                                            <h6>Verify</h6>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.<a
+                                                    href="#"> Learn more</a> </p>
+                                            <input type="text" placeholder="www.examplewebsite.com">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary">Update</button>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="account-social-links">
+                            <div class="card-body pb-2">
+                                <h3>Notifications</h3>
+                                <br>
+                                <div class="form-group">
+                                    <h6>Email Notifications</h6>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsum </p>
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                      </label>
+                                </div>
+                                <div class="form-group">
+                                    <h6>Push Notifications</h6>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsum </p>
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                      </label>
+                                </div>
+                                <button type="button" class="btn btn-primary">Update</button>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="account-connections">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-twitter">Connect to
+                                    <strong>Twitter</strong></button>
+                            </div>
+                            <hr class="border-light m-0">
+                            <div class="card-body">
+                                <h5 class="mb-2">
+                                    <a href="javascript:void(0)" class="float-right text-muted text-tiny"><i
+                                            class="ion ion-md-close"></i> Remove</a>
+                                    <i class="ion ion-logo-google text-google"></i>
+                                    You are connected to Google:
+                                </h5>
+                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                    data-cfemail="f9979498818e9c9595b994989095d79a9694">[email&#160;protected]</a>
+                            </div>
+                            <hr class="border-light m-0">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-facebook">Connect to
+                                    <strong>Facebook</strong></button>
+                            </div>
+                            <hr class="border-light m-0">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-instagram">Connect to
+                                    <strong>Instagram</strong></button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="account-notifications">
+                            <div class="card-body pb-2">
+                                <h6 class="mb-4">Activity</h6>
+                                <div class="form-group">
+                                    <label class="switcher">
+                                        <input type="checkbox" class="switcher-input" checked>
+                                        <span class="switcher-indicator">
+                                            <span class="switcher-yes"></span>
+                                            <span class="switcher-no"></span>
+                                        </span>
+                                        <span class="switcher-label">Email me when someone comments on my article</span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="switcher">
+                                        <input type="checkbox" class="switcher-input" checked>
+                                        <span class="switcher-indicator">
+                                            <span class="switcher-yes"></span>
+                                            <span class="switcher-no"></span>
+                                        </span>
+                                        <span class="switcher-label">Email me when someone answers on my forum
+                                            thread</span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="switcher">
+                                        <input type="checkbox" class="switcher-input">
+                                        <span class="switcher-indicator">
+                                            <span class="switcher-yes"></span>
+                                            <span class="switcher-no"></span>
+                                        </span>
+                                        <span class="switcher-label">Email me when someone follows me</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <hr class="border-light m-0">
+                            <div class="card-body pb-2">
+                                <h6 class="mb-4">Application</h6>
+                                <div class="form-group">
+                                    <label class="switcher">
+                                        <input type="checkbox" class="switcher-input" checked>
+                                        <span class="switcher-indicator">
+                                            <span class="switcher-yes"></span>
+                                            <span class="switcher-no"></span>
+                                        </span>
+                                        <span class="switcher-label">News and announcements</span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="switcher">
+                                        <input type="checkbox" class="switcher-input">
+                                        <span class="switcher-indicator">
+                                            <span class="switcher-yes"></span>
+                                            <span class="switcher-no"></span>
+                                        </span>
+                                        <span class="switcher-label">Weekly product updates</span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="switcher">
+                                        <input type="checkbox" class="switcher-input" checked>
+                                        <span class="switcher-indicator">
+                                            <span class="switcher-yes"></span>
+                                            <span class="switcher-no"></span>
+                                        </span>
+                                        <span class="switcher-label">Weekly blog digest</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="text-right mt-3" style=" width: 82%; position: relative; left: 4rem; top: -4rem;">
+            <button type="button" class="btn btn-primary">Save changes</button>&nbsp;
+            <button type="button" class="btn btn-default">Cancel</button>
+        </div> -->
+
+    </main>
+
+</body>
+<script></script>
+<script>
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const sidebar = document.getElementById('sidebar');
+
+    hamburgerMenu.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        // Upload profile picture
+        $('#image-upload').change(function (event) {
+            const imageFile = event.target.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function (event) {
+                $('#profile-image').attr('src', event.target.result);
+            };
+
+            reader.readAsDataURL(imageFile);
+        });
+
+        // Submit form
+        $('#form').submit(function (event) {
+            event.preventDefault();
+
+            const name = $('#name').val();
+            const email = $('#email').val();
+            const phone = $('#phone').val();
+            const description = $('#description').val();
+            const country = $('#country').val();
+
+            if (!name) {
+                alert('Please enter your name.');
+                return;
+            }
+
+            if (!email) {
+                alert('Please enter your email address.');
+                return;
+            }
+
+            if (!phone) {
+                alert('Please enter your phone number.');
+                return;
+            }
+
+            if (!description) {
+                alert('Please write a little bit about yourself.');
+                return;
+            }
+
+            // Submit the form via Ajax
+            $.ajax({
+                type: 'POST',
+                url: '/contact',
+                data: {
+                    name: name,
+                    email: email,
+                    phone: phone,
+                    description: description,
+                    country: country
+                },
+                success: function (response) {
+                }
+            });
+        });
+    });
+</script>
+<script>
+    const imgDiv = document.querySelector('.user-img');
+    const img = document.querySelector('#photo');
+    const file = document.querySelector('#file');
+    const uploadebtn = document.querySelector('#uploadbtn');
+    file.addEventListener('change', function () {
+        const chosedfile = this.files[0];
+        if (chosedfile) {
+            const reader = new FileReader();
+            reader.addEventListener('load', function () {
+                img.setAttribute('src', reader.result);
+            })
+            reader.readAsDataURL(chosedfile);
+            C
+        }
+    })
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

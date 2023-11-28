@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <!-- Include FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../signin/signIn_css/style.css">
+      
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="center-text">Sign in</h2>
+        <form>
+            <p class="center-text">to continue to YouTube</p>
+            <!-- Email input -->
+            <div class="form-group">
+                <input type="email" id="email" name="email" required placeholder="Email" />
+            </div>
+
+            <!-- Password input -->
+            <div class="form-group">
+                <input type="password" id="password" name="password" required placeholder="Password" />
+                <i class="far fa-eye" style="color: #565c67"></i>
+            </div>
+
+            <p style="font-size: 12px; margin-top: -10px">Forget Your Password?</p>
+            <!-- Sign Up button -->
+            <div class="form-group">
+                <button type="submit">Sign In</button>
+            </div>
+
+            <!-- Divider with text -->
+            <div style="text-align: center">
+                <p style="color: gray; font-size: 13px; margin-top: 25px">
+                    OR SIGN IN WITH
+                </p>
+            </div>
+
+            <!-- Social sign-in buttons -->
+            <div class="social-sign-in">
+                <button class="google">
+                    <img src="../signin/pictureofsignin/google.png" alt="Google" />Google
+                </button>
+                <button class="facebook">
+                    <img src="../signin/pictureofsignin/facebook.png" alt="Facebook" /> Facebook
+                </button>
+            </div>
+            <!-- Privacy policy -->
+            <div class="privacy-policy">
+                <p>
+                    By signing up, you agree to our
+                    <a href="#">Terms and Conditions</a> and
+                    <a href="#">Privacy Policy</a>.
+                </p>
+            </div>
+            <br /><br />
+            <!-- Already have an account -->
+            <div class="privacy-policy">
+                <p><a href="#">Create Account</a></p>
+            </div>
+
+            <div id="error-message" class="error-message"></div>
+
+        </form>
+    </div>
+</body>
+<script src="../signin/signin_javascript/signIn.js"></script>
+
+</html>

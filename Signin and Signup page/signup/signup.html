@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <!-- Include FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../signup/sign_up_css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="center-text">Sign Up</h2>
+        <form>
+            <!-- Email input -->
+            <div class="form-group">
+                <input type="email" id="email" name="email" required placeholder="Email" />
+            </div>
+
+            <!-- Password input -->
+            <div class="form-group">
+                <input type="password" id="password" name="password" required placeholder="Password" />
+                <i class="far fa-eye" style="color: #565c67"></i>
+            </div>
+
+            <!-- Confirm password input -->
+            <div class="form-group">
+                <input type="password" id="confirm-password" name="confirm-password" required
+                    placeholder="Confirm Password" />
+                <i class="far fa-eye" style="color: #565c67"></i>
+            </div>
+
+            <div class="privacy-policy">
+                <p>
+                    By signing up, you agree to our
+                    <a href="#">Terms and Conditions</a> and
+                    <a href="#">Privacy Policy</a>. California residents, see our
+                    <a href="#">CA Privacy Notice</a>.
+                </p>
+            </div>
+            <!-- Sign Up button -->
+            <div class="form-group">
+                <button type="submit">Sign Up</button>
+            </div>
+
+            <!-- Divider with text -->
+            <div style="text-align: center">
+                <p style="color: gray; font-size: 13px; margin-top: 25px">
+                    OR SIGN IN WITH
+                </p>
+            </div>
+
+            <!-- Social sign-in buttons -->
+            <div class="social-sign-in">
+                <button class="google">
+                    <img src="../signup/pictureofsignup/google.png" alt="Google" />Google
+                </button>
+                <button class="facebook">
+                    <img src="../signup/pictureofsignup/facebook.png" alt="Facebook" /> Facebook
+                </button>
+            </div>
+
+            <!-- Already have an account -->
+            <div class="privacy-policy">
+                <p>I have an account <a href="#">Sign In</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
